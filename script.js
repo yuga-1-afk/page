@@ -165,6 +165,19 @@ email_submit_button.addEventListener("click", () => {
     // ✅ STORE EMAIL + QUIZ STATUS
     localStorage.setItem("quizEmail", email);
 
+    fetch(
+        "https://script.google.com/macros/s/AKfycbyeoGn2jKBwFmHCqQ4cSBUlarmvvxJvi6Egcidjw9FMBh6vVk3zVfR-KqgpED_yJvNgug/exec",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams({
+                email: email,
+            }).toString(),
+        }
+    );
+
     quizzpopupindex = 1;
     custom_quizz_email_signup.style.display = "none";
     custom_quizz_popup1.style.display = "block";

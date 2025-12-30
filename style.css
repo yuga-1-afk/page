@@ -523,18 +523,17 @@
     align-items: center;
 }
 .custom_quizz4_title {
-    color: #d6b46c;
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     text-align: center;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -575,18 +574,17 @@
     align-items: center;
 }
 .custom_quizz6_title {
-    color: #d6b46c;
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     text-align: center;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -613,18 +611,17 @@
     border-radius: 10px;
 }
 .custom_quizz5_title {
-    color: #d6b46c;
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     text-align: center;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -659,18 +656,17 @@
     border-radius: 10px;
 }
 .custom_quizz3 h3 {
-    color: #d6b46c;
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     text-align: center;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -723,17 +719,17 @@
 .custom_quizz1_title {
     text-align: center;
     margin: 12px 0px;
-    color: #d6b46c;
+
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -745,17 +741,16 @@
 .custom_quizz2_title {
     text-align: center;
     margin: 24px 0px;
-    color: #d6b46c;
     font-size: 24px;
     font-weight: 500;
     font-family: "DM Serif Display", serif;
     background: linear-gradient(
         120deg,
-        #b8954f 0%,
-        #f5e3a1 20%,
-        #d6b46c 40%,
-        #f5e3a1 60%,
-        #b8954f 80%
+        #0b3d2e 0%,
+        #d6b46c 20%,
+        #1f6f54 40%,
+        #d6b46c 60%,
+        #0b3d2e 80%
     );
     background-size: 200% auto;
     background-clip: text;
@@ -1122,6 +1117,7 @@
 
     .custom_quizz4_options {
         grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(1, 165px);
     }
     .custom_quizz4_input1_button ul li {
         font-size: 12px;
@@ -1129,6 +1125,16 @@
     .custom_quizz4_input1_button ul li span img {
         height: 12px;
         width: 12px;
+    }
+    .custom_quizz4_title {
+        font-size: 18px;
+    }
+    .custom_quizz4_question {
+        font-size: 14px;
+    }
+    .custom_quizz4_option_img {
+        height: 50px;
+        width: 50px;
     }
 
     /*------------------------------quizz six popup----------------------------------------*/
@@ -1142,5 +1148,22 @@
     .custom_quizz6_input1_button ul li span img {
         height: 12px;
         width: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .custom_email_signup_title {
+        font-size: 16px;
+    }
+    .custom_quizz1_options {
+        gap: 12px;
+    }
+    .custom_quizz4_options {
+        gap: 12px;
+    }
+    .custom_quizz6_options {
+        gap: 12px;
+    }
+    .custom_quizz4_title {
+        font-size: 18px;
     }
 }
