@@ -173,7 +173,6 @@ email_submit_button.addEventListener("click", () => {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
-                type: "email_only",
                 email: email,
             }).toString(),
         }
