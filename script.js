@@ -166,13 +166,14 @@ email_submit_button.addEventListener("click", () => {
     localStorage.setItem("quizEmail", email);
 
     fetch(
-        "https://script.google.com/macros/s/AKfycbyeoGn2jKBwFmHCqQ4cSBUlarmvvxJvi6Egcidjw9FMBh6vVk3zVfR-KqgpED_yJvNgug/exec",
+        "https://script.google.com/macros/s/AKfycbyxvp9Oqn5w8aZa90cuRarlqTvqnuOqHc36nQPkBHgljzxkOLR_XUaMWqC6YTnyyfM5/exec",
         {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
+                type: "email_only",
                 email: email,
             }).toString(),
         }
@@ -244,6 +245,7 @@ custom_quizz5_input_button.addEventListener("click", () => {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
             body: new URLSearchParams({
+                type: "quiz_complete",
                 email: email,
                 source: "Scratch Quiz",
                 question1: quizzAnswers.q1,
