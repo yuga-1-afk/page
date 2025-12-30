@@ -169,7 +169,6 @@ email_submit_button.addEventListener("click", () => {
         "https://script.google.com/macros/s/AKfycbyeoGn2jKBwFmHCqQ4cSBUlarmvvxJvi6Egcidjw9FMBh6vVk3zVfR-KqgpED_yJvNgug/exec",
         {
             method: "POST",
-            mode: "no-cors",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded",
             },
